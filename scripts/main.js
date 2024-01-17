@@ -53,6 +53,6 @@ const informacion = evento =>{
 
 }
 
-//eventos
+
 info.addEventListener("submit", informacion);
-formulario.addEventListener("submit", validar);
+formulario.addEventListener("click", validar);

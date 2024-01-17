@@ -19,12 +19,12 @@
 
     <div class="main-contenedor-form">
         <h1>Contáctanos</h1>
-        <form class="formulario" action="correcto.html">
+        <form id="formulario" action="correcto.html" method="get">
             <input type="text" id="nombre" placeholder="Nombre">
             <input type="text" id="correo" placeholder="Correo electrónico">
-            <label for="lbl-soli">Solicitud de información adicional</label>
+            <label id="lbl-soli">Solicitud de información adicional</label>
             <input type="radio" name="info" id="adInfo">
-            <label for="lbl-reserva">Reserva de ruta</label>
+            <label id="lbl-reserva">Reserva de ruta</label>
             <input type="radio" name="reserva" id="reserva">
             <input type="button" value="Info" id="info" onclick="informacion()">
             <textarea name="txtmsj" id="txtmsj" cols="25" rows="8" placeholder="Por favor, inserta un mensaje"></textarea>
