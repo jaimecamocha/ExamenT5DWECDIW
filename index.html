@@ -10,8 +10,8 @@
 
 <body>
     
-    <div class="main-contenedor-hero">
-        <div class="contenedor-hero">
+    <div class="hero-body">
+        <div class="hero-contenedor">
             <h1>El Molinón</h1>
             <h2>El estadio más antiguo de España</h2> 
         </div>
@@ -23,12 +23,12 @@
             <input type="text" id="nombre" placeholder="Nombre">
             <input type="text" id="correo" placeholder="Correo electrónico">
             <label id="lbl-soli">Solicitud de información adicional</label>
-            <input type="radio" name="info" id="adInfo">
+            <input type="radio" name="radioButton" id="adInfo" checked>
             <label id="lbl-reserva">Reserva de ruta</label>
-            <input type="radio" name="reserva" id="reserva">
-            <input type="button" value="Info" id="info" onclick="informacion()">
+            <input type="radio" name="radioButton" id="reserva">
+            <button id="info" onclick="">Info</button>
             <textarea name="txtmsj" id="txtmsj" cols="25" rows="8" placeholder="Por favor, inserta un mensaje"></textarea>
-            <input type="button" value="Enviar" id="enviar">
+            <input type="submit" value="Enviar" id="enviar">
 
             <ul id="errores"></ul>
         </form>

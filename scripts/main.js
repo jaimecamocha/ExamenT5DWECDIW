@@ -13,7 +13,7 @@ const errores = document.querySelector("#errores");
 let msjerrores = [];
 
 
-
+//validación del formulario
 const validar = evento =>{
     evento.preventDefault();
     msjerrores = [];
@@ -48,11 +48,12 @@ const validar = evento =>{
     }
 }
 
+formulario.addEventListener("submit", validar);
 
-const informacion = evento =>{
+
+// información adicional y reservas
+function informacion(){
 
 }
 
-
-info.addEventListener("submit", informacion);
-formulario.addEventListener("click", validar);
+info.addEventListener("click", informacion);
