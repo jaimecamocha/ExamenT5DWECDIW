@@ -1,5 +1,6 @@
 /**
  * JAIME FERNÁNDEZ CALVO
+ * https://github.com/jaimecamocha/ExamenT5DWECDIW.git
  */
 
 const formulario = document.querySelector("#formulario");
@@ -53,7 +54,11 @@ formulario.addEventListener("submit", validar);
 
 // información adicional y reservas
 function informacion(){
-
+    if(adInfo.checked){
+        alert("Enviaremos informacion adicional al correo indicado en el formulario")
+    }else{
+        alert("Reserva completada. Enviaremos los billetes a tu correo electronico")
+    }
 }
 
 info.addEventListener("click", informacion);
